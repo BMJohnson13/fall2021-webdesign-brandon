@@ -1,0 +1,6 @@
+Brandons-MacBook-Pro:~ artbeatrevival$ cd Documents
+Brandons-MacBook-Pro:Documents artbeatrevival$ cd fall2021-webdesign-brandon
+Brandons-MacBook-Pro:fall2021-webdesign-brandon artbeatrevival$ mkdir homework
+Brandons-MacBook-Pro:fall2021-webdesign-brandon artbeatrevival$ cd homework
+Brandons-MacBook-Pro:homework artbeatrevival$ touch homework1-2.txt
+Brandons-MacBook-Pro:homework artbeatrevival$ 
