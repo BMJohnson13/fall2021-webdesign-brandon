@@ -1,4 +1,8 @@
 <!-- form and input interactive elements-->
+<h1>Forms 9/2
+</h1>
+
+<h2>Inputs & Buttons:</h2>
 <form>
     <label for="in1">INPUT</label>
     <input type="text" id="in1"/>
@@ -25,17 +29,64 @@
     <br/>
     <button>THAT<br/>WAS<br/>EASY</button>
     <br/>
-    <input type="number"/>
+    <label for="howmany">How many?</label>
+    <input type="number" value="100" id="howmany"/>
 </form>
 <!-- the for= and id= attributes are semantics that link the lables to the inputs-->
 
 <!--lables and inputs are in-line in line-->
 <form>
     <label for="username">Username:</label>
-    <input type="text" id="username" />
-    <br/>
+    <input type="text" id="username" placeholder="username@server.com" />
+    <br>
     <label for="password">Password:</label>
-    <input type="password" id="password" />
-    <br/>
+    <input type="password" id="password" placeholder="**************************************************"/>
+    <br>
     <input type="submit" />
+</form>
+
+<h2>Radio buttons & Checkboxes</h2>
+
+<form>
+    <p>Guitar Brands</p>
+    <input type="checkbox" name="brands" id="fen">
+    <label for="fen" name="brands">Fender</label>
+    <br>
+    <input type="checkbox" name="brands" id="gib">
+    <label for="gib" name="brands">Gibson</label>
+    <br>
+    <input type="checkbox" name="brands" id="prs">
+    <label for="prs" name="brands" >Paul Reed Smith</label>
+<br>
+</form>
+
+    <p>Effects Used</p>
+    <input type="radio" name="fxused" id="dis">
+    <label for="dis" >Distortion</label>
+</br>
+    <input type="radio" name="fxused" id="del">
+    <label for="del" >Delay</label>
+</br>
+    <input type="radio" name="fxused" id="rev" />
+    <label for="rev" >Reverb</label>
+</br>
+
+<p>Amplifiers</p>
+<input type="radio" name="amp" id="ss">
+    <label for="ss" >Solid State</label>
+</br>
+    <input type="radio" name="amp" id="tb">
+    <label for="tb" >Tube</label>
+</br>
+    <input type="radio" name="amp" id="cb" />
+    <label for="cb" >Combo</label>
+</br>
+
+    <!--<input type="radio" id="all">
+    <label for="all">All of the Above</label>
+</br>-->
+</form>
+
+<!-- radio buttons are intended for singular selection and checkboxes are for multiple selections-->
+
 </form>
