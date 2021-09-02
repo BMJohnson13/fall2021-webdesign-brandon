@@ -1,20 +1,37 @@
 <!-- form and input interactive elements-->
 <form>
-    <input type="text" />
-    <input type="checkbox" />
-    <input type="radio" />
+    <label for="in1">INPUT</label>
+    <input type="text" id="in1"/>
+    <br/>
+    <p>question?</p>
+    <label for="yes">YES</label>
+    <input type="checkbox" id="yes"/>
+    <br/>
+    <label for="no">NO</label>
+    <input type="checkbox" id="no"/>
+    <br/>
+    <label for="na">N/A</label>
+    <input type="radio" id="na"/>
+    <br/>
+    <br/>
     <input type="reset" />
     <input type="submit" />
+    <br/>
+    <br/>
+    <p>comments:</p>
     <textarea> </textarea>
-    <button>THAT WAS EASY</button>
+    <br/>
+    <button>Submit<br/>Comment</button>
+    <br/>
+    <button>THAT<br/>WAS<br/>EASY</button>
 </form>
 <!-- the for= and id= attributes are semantics that link the lables to the inputs-->
 
 <!--lables and inputs are in-line in line-->
 <form>
-    <label for=:username">Username:</label>
+    <label for="username">Username:</label>
     <input type="text" id="username" />
-    <br />
+    <br/>
     <label for="password">Password:</label>
     <input type="password" id="password" />
     <br/>
