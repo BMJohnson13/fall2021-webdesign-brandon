@@ -4,6 +4,7 @@
 
 <h2>Inputs & Buttons:</h2>
 <form>
+    <!-- -->
     <label for="in1">INPUT</label>
     <input type="text" id="in1"/>
     <br/>
@@ -23,7 +24,9 @@
     <br/>
     <br/>
     <p>comments:</p>
+ <!-- text area is an input that is resizeable by the user-->
     <textarea> </textarea>
+<!--button is a generic clickable element that is usually tied to programing to give it a function-->
     <br/>
     <button>Submit<br/>Comment</button>
     <br/>
@@ -36,6 +39,7 @@
 
 <!--lables and inputs are in-line in line-->
 <form>
+    <!-- lables are text that signify what the input is for. id attributes are Recommended for accessability! -->
     <label for="username">Username:</label>
     <input type="text" id="username" placeholder="username@server.com" />
     <br>
@@ -49,37 +53,42 @@
 
 <form>
     <p>Guitar Brands</p>
-    <input type="checkbox" name="brands" id="fen">
-    <label for="fen" name="brands">Fender</label>
+    <input type="checkbox" name="brands" id="fender">
+    <label for="fender" name="brands">Fender</label>
     <br>
-    <input type="checkbox" name="brands" id="gib">
-    <label for="gib" name="brands">Gibson</label>
+    <input type="checkbox" name="brands" id="gibson">
+    <label for="gibson" name="brands">Gibson</label>
     <br>
-    <input type="checkbox" name="brands" id="prs">
-    <label for="prs" name="brands" >Paul Reed Smith</label>
+    <input type="checkbox" name="brands" id="Paul Reed Smith">
+    <label for="Paul Reed Smith" name="brands" >Paul Reed Smith</label>
 <br>
 </form>
 
     <p>Effects Used</p>
-    <input type="radio" name="fxused" id="dis">
-    <label for="dis" >Distortion</label>
+    <input type="radio" name="fxused" id="Distortion">
+    <label for="Distortion" >Distortion</label>
 </br>
-    <input type="radio" name="fxused" id="del">
-    <label for="del" >Delay</label>
+    <input type="radio" name="fxused"  id="Delay">
+    <label for="Delay" >Delay</label>
 </br>
-    <input type="radio" name="fxused" id="rev" />
-    <label for="rev" >Reverb</label>
+    <input type="radio" name="fxused" id="Reverb" />
+    <label for="Reverb" >Reverb</label></br>
+    <input type="radio" name="fxused" checked="checked" id="other">
+    <label for="other" >Other</label>
+
 </br>
 
 <p>Amplifiers</p>
-<input type="radio" name="amp" id="ss">
-    <label for="ss" >Solid State</label>
+<input type="radio" name="amp" id="solid state">
+    <label for="solid state" >Solid State</label>
 </br>
-    <input type="radio" name="amp" id="tb">
-    <label for="tb" >Tube</label>
+    <input type="radio" name="amp" id="Tube">
+    <label for="Tube" >Tube</label>
 </br>
-    <input type="radio" name="amp" id="cb" />
-    <label for="cb" >Combo</label>
+    <input type="radio" name="amp" id="Combo" />
+    <label for="Combo" >Combo</label></br>
+    <input type="radio" name="amp" checked="checked" id="Other">
+    <label for="Other" >Other</label>
 </br>
 
     <!--<input type="radio" id="all">
@@ -88,5 +97,16 @@
 </form>
 
 <!-- radio buttons are intended for singular selection and checkboxes are for multiple selections-->
-
+<h2>test area</h2>
+<fieldset>
+<legend>Guitar Brands (legend style)</legend>
+    <input type="checkbox" name="brands" id="Fender">
+    <label for="Fender" name="brands">Fender</label>
+    <br>
+    <input type="checkbox" name="brands" id="Gibson">
+    <label for="Gibson" name="brands">Gibson</label>
+    <br>
+    <input type="checkbox" name="brands" id="Paul Reed Smith">
+    <label for="Paul Reed Smith" name="brands" >Paul Reed Smith</label>
+</fieldset>
 </form>
