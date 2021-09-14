@@ -5,7 +5,7 @@
 
     <head>
         <meta charset="utf-8"/>
-        <title>09/02/2021</title>
+        <title>Article LAYOUT</title>
 
         
         <style>
@@ -19,7 +19,7 @@
               
                 font-size: 24px;
                 font-family: 'Courier New', Courier, monospace;
-                color:rgb(79, 151, 184); 
+                color:whitesmoke; 
                 text-align: justify;
                 line-height: 36px;
                
@@ -31,35 +31,35 @@
                 font-family: 'Courier New', Courier, monospace;
                 text-align: center;
                 text-transform:uppercase;
-                color:rgb(74, 192, 228);
+                color:whitesmoke;
             }
             h2 {
                 font-size: 28px;
                 font-family: 'Courier New', Courier, monospace;
-                color:rgb(74, 192, 228);
+                color:whitesmoke;
                 text-align: center;
             }
             figure {
                 font-size: 20px;
                 font-family: 'Courier New', Courier, monospace;
-                color:rgb(129, 191, 219);
+                color:whitesmoke;
             }
             blockquote {
                 font-family: 'Courier New', Courier, monospace;
                 line-height: 24 px;
-                color:rgb(79, 151, 184); 
+                color:whitesmoke; 
             }
             form {
                 font-family: 'Courier New', Courier, monospace;
-                color:rgb(79, 151, 184); 
+                color:whitesmoke; 
                 font-size:24px; 
-                border-color:rgb(66, 5, 78);
+                border-color:rgb(131, 53, 64);
                 border-width: 3px;
                 border-style:groove; 
                 border-radius: 3px;
             }
             li {
-                border-color:rgb(66, 5, 78);
+                border-color:rgb(131, 53, 64);
                 border-width: 3px;
                 border-style:groove; 
                 border-radius: 3px;
@@ -76,15 +76,15 @@
             }
 
             img {
-                border-color:rgb(66, 5, 78);
+                border-color:rgb(131, 53, 64);
                 border-width: 8px;
                 border-style:groove; 
                 border-radius: 5px;
                 
             }
             input , textarea{
-                background-color:rgb(88, 71, 104);
-                border-color:rgb(79, 151, 184);
+                background-color:rgb(85, 85, 85);
+                border-color:rgb(131, 53, 64);
                 border-width: 8px;
                 border-style:groove; 
                 border-radius: 5px;
@@ -93,27 +93,45 @@
             textarea {
                 font-family:'Courier New', Courier, monospace;
                 font-size: 16px;
-                color: rgb(79, 151, 184);
+                color: rgb(88, 71, 104);
                 
             }
             #last {
-                color:teal;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(41, 35, 46);
+                padding: 20px;
+                border-color:rgb(131, 53, 64);
+                border-width: 8px;
+                border-style: solid;
+                border-radius: 5px;
             }
 
             #second-image {
-                border-color:teal;
+                border-color:rgb(131, 53, 64);
                 width: 600px;
             }
 
             .end {
-                background-color: rgb(71, 53, 71);
+                background-color: rgba(245, 245, 245, 0.719);
             }
-          
+            #container {
+                width: 500px;
+                border: solid 1px rgb(131, 53, 64);
+                margin-left: auto;
+                margin-right: auto;
+                padding: 80px;
+                border-radius: 10px;
+                background-color:rgba(255, 255, 255, 0.089);
+            }
+            #msg {
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
 
     <body>
-   
+        <div id="container">
             <h1>First Article</h1>
                 
         
@@ -176,13 +194,17 @@
                 <br>
                 <label for="msg">Message</label>
                 <br>
-                <textarea rows=10 cols =100 id="msg"></textarea>
+                <textarea id="msg"></textarea>
                 
                 <br>
                 
                 <input type="submit"/>
 
             </form>
+            </div>
+            <div id="footer">
+                <span></span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quis quam dignissimos, molestias dolor cumque consequatur quibusdam excepturi maiores ratione, accusamus, ex illo. Quod maxime maiores molestias asperiores laboriosam quasi.</p>
             </div>
     </body>
 

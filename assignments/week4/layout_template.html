@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- ---------------------------------------- -->
+    <head>
+
+        <meta charset="utf-8" />
+        <title>HTML Layout Template</title>
+    <!-- ---------------------------------------- -->
+        <style>
+            body {
+                background-color: rgb(153, 153, 153);
+                margin: 0;
+
+            }
+            h1 { 
+                font-size: 72px;
+            }
+            #container {
+                background-color: gray;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                /* when a container has children and these children have margins, the parent ignores these margins and will be outside the parents borders.
+
+                fix- apply overflow: auto; this will force the
+                */
+                overflow: auto;
+            }
+/* D.R.Y. CODE- Don't Repeat Yourself *if code for multiple elements are the same, group them using commas and listing the duplicate properties */
+            header, main, footer {
+                background-color: white;
+                margin: 10px;
+            }
+
+            header {
+                height: auto;
+                overflow: auto;
+                text-align: center;
+            
+            }
+            
+
+            main {
+                height: 700px;
+            }
+            footer {
+                height: 100px;
+                text-align: center;
+            
+            }
+           
+        </style>
+    </head>
+<!-- ---------------------------------------- -->
+    <body>
+
+        <div id="container">
+
+            <header>
+                <h1>WP TITLE</h1>
+                <p>subtext</p>
+            </header>
+            <main>
+
+            </main>
+
+            <footer>
+                <p>Copyright ©2021 Artbeat Revival</p>
+
+            </footer>
+        </div>
+
+    </body>
+</html>
