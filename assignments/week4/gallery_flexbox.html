@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--
+        Whats the difference between:
+        head header h1 thead 
+    -->
+
+    <head>
+        <meta charset="utf=8" />
+        <title>Gallery using Flexbox</title>
+
+        <style>
+            
+            body {
+                display: flex;
+                margin: 0;
+            }
+            main {
+                background-color: rgb(248, 176, 68);
+            }
+            #gallery-box {
+                display: flex;
+                border: 1px solid black;
+                width: 900px;
+                margin: 0 auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            
+         }
+
+            .image-box {
+                height: 200px;
+                border: 2px solid rgb(46, 35, 10);
+                margin: 10px;
+                flex-basis: 100px;
+                overflow: hidden;
+            }
+
+            .image-box img {
+                width: 100%;
+                
+                
+               
+            }
+
+            </style>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>Seriousness Gallery</h1>
+            </header>
+
+            <main>
+
+                <div id="gallery-box">
+                    
+                    <div class="image-box">
+                        <img src="images/monkey.jpg"/>
+                    </div>
+                    
+                    <div class="image-box">
+                        <img src="images/ostr.jpg"/>
+                    </div>
+                    
+                    <div class="image-box">
+                        <img src="images/cat.jpg"/>
+                    </div>
+                    
+                    <div class="image-box">
+                        <img src="images/dog.jpg"/>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer>
+                <p>Copyright held by respective owners and PEXEL</p>
+            </footer>
+        </div>
+    </body>
+
+</html>

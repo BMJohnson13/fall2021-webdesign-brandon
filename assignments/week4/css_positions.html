@@ -8,6 +8,8 @@
         <title>CSS Positions</title>
 
         <style>
+
+            
             #red, #green, #blue {
                 width: 200px;
                 height: 200px;
@@ -15,16 +17,23 @@
             }
             #red {
                 background-color: red;
-                position: absolute;
-                top: 500px;
-                left: 500px;
+                position:absolute;
+                z-index: 1;
                 
             }
             #green {
                 background-color: green;
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                z-index: 10;
             }
             #blue {
                 background-color: blue;
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                z-index: 1;
             }
         </style>
 
