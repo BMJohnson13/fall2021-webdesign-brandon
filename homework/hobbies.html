@@ -1,39 +1,130 @@
 <!DOCTYPE html>
-
+<!-- ive spent hours trying to get the classes and id's to work and am really struggling. I'm sorry but I'm going to have to take the weekend to figure it out. I understand what each thing does, it's the heirarchy that has me stuck. -->
 <html lang="en">
-
-    <head>
+    
+        <head>
 
         <meta charset="utf-8" />
-        <title>First Steps in Playing Guitar</title>
+        <title>Layout Template</title>
+       
+       
+       <style>
+            body {
+                background-color: rgb(153, 153, 153);
+                margin: 0;
 
-        <style>
-            bkg {
-               opacity: 0.5;
-               width: 100%;
-               height: auto;
-           }
-        </style>
+            }
+           
+            #container {
+                background-color: gray;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
 
+                overflow: auto;
+          
+            h1 { 
+                font-size: 72px;
+            }
+            
+            #purchase {
+                display: flex;
+                border: 1px solid red;
+                /* width: 900px; */
+                margin: 0 auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .image-box {
+                height: 400px;
+                border: 1px solid grey;
+                margin: 10px;
+                flex-basis: 200px;
+                /* flex-grow: 1; */
+                flex-shrink: 1;
+                overflow: hidden;
+            }
+            .buyparagraph {
+                height: 400px;
+                border: 2px;
+                
+            }
+
+
+            .image-box img {
+                width: auto;
+            }
+
+            header, main, footer {
+                background-color: white;
+                margin: 25px;
+            }
+
+            header {
+                height: auto;
+                overflow: auto;
+                text-align: center;
+            
+            }
+            
+
+            main {
+                height: 700px;
+            }
+            footer {
+                height: 100px;
+                text-align: center;
+            
+            }
+           
+       
+       </style>
+    
     </head>
 
     <body>
-        
-            <div id= "bkg" style="background-image: url(images/squire.png;)">
+
+        <div id="container">
+
+            <header>
+                <h1>Guitar</h1>
+                <p>The first steps to take to begin playing guitar.</p>
+            </header>
+            <main>
+                <div id="introduction">
+                    <h2 id="subheadone">Introduction</h2>
+                    <p>Hey there! My name is Brandon and I’d like to share my love for the guitar with you. I have played music for over twenty years and what started as a hobby quickly became my passion. I created this page to give those of you who are interested, a bit of assistance in where exactly to start. I hope that this information gives you the tools you need to purchase and begin learning how to play guitar. 
+                    <br>
+                    Music is medicine. The main reason I enjoy this activity so much is because playing music is psychologically medicinal. I use it as a form of meditation as well as expression. Having any form of creative outlet is beneficial to everyone. It doesn’t take learning much to benefit from playing. Even as a beginner, 13 years old and clumsily strumming the out of tune strings helped me stay grounded. To this day picking up a guitar gives me a break from the hectic day to day. Maybe you too could join me and millions of others who enjoy just getting lost in the music.
+                    </p>
+                </div>
+
+                    <br>
+                <div id="purchase">
+                    <h2 id="subheadtwo">Where to Begin</h2>
+                   
+                    <h3 id="subsubhead">A quick guide to chosing and purchasing a guitar that is right for you.</h3>
+                   
+                    <div class="image-box" id="purchase">
+                        <img src="hobby_images/guitarfaderesize.jpg">
+                    </div>
+
+                    <div class="buyparagraph" id="purchase">
+                        <p>Well, first you’ll need a guitar! Choosing a guitar that is right fit for you is important. Starting out on an acoustic guitar is the easiest in terms of setting up. No cables, no amps, no knobs or anything additional that can sometimes be overwhelming. Acoustic guitars are just there to pick up and play! However, if your desire is to play electric then by all means buy an electric! There are plenty of starter packs for electrics that come with all of the gear you’ll need to plug in and play. Below are two lists of a few affordable acoustic and electric makes and models that I recommend for beginners.</p>
+                </div>
+            
+                <div id="acoustic">
+
+
             </div>
 
-        <h1>How to Start Playing Guitar</h1>
-        <h2>Introduction</h2>
-        <p>Hey there! My name is Brandon and I’d like to share my love for the guitar with you. I have played music for over twenty years and what started as a hobby quickly became my passion. I created this page to give those of you who are interested, a bit of assistance in where exactly to start. I hope that this information gives you the tools you need to purchase and begin learning how to play guitar. 
-        </p>
-        <br>
-        <p>Music is medicine. The main reason I enjoy this activity so much is because playing music is psychologically medicinal. I use it as a form of meditation as well as expression. Having any form of creative outlet is beneficial to everyone. It doesn’t take learning much to benefit from playing. Even as a beginner, 13 years old and clumsily strumming the out of tune strings helped me stay grounded. To this day picking up a guitar gives me a break from the hectic day to day. Maybe you too could join me and millions of others who enjoy just getting lost in the music.</p>
-        <h2>Where to Begin</h2>
-        
-        <p>Well, first you’ll need a guitar! Choosing a guitar that is right fit for you is important. Starting out on an acoustic guitar is the easiest in terms of setting up. No cables, no amps, no knobs or anything additional that can sometimes be overwhelming. Acoustic guitars are just there to pick up and play! However, if your desire is to play electric then by all means buy an electric! There are plenty of starter packs for electrics that come with all of the gear you’ll need to plug in and play. Below are two lists of a few affordable acoustic and electric makes and models that I recommend for beginners.</p>
+            </main>
+
+            <footer>
+                <p>Copyright ©2021 Artbeat Revival</p>
+
+            </footer>
+        </div>
 
     </body>
-
 </html>
-
-<!--Color scheme codes navy- 181220 darker teal- 233239 coral-994A45 muted yellow- E9C87B-->
